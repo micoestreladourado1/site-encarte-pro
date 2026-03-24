@@ -292,6 +292,79 @@ export default function App() {
         </div>
       </section>
 
+      {/* Video Section */}
+      <section className="py-24 bg-slate-950 relative overflow-hidden">
+        {/* Decorative glows */}
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-emerald-500/10 blur-[120px] rounded-full pointer-events-none" />
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-emerald-500/10 blur-[120px] rounded-full pointer-events-none" />
+
+        <div className="container mx-auto px-6 relative z-10">
+          {/* Header badge */}
+          <div className="flex justify-center mb-6">
+            <span className="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-sm font-bold px-5 py-2 rounded-full uppercase tracking-widest">
+              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse inline-block" />
+              Veja na Prática
+            </span>
+          </div>
+
+          <h2 className="text-3xl lg:text-5xl font-bold text-center mb-4 leading-tight">
+            Assista e Veja Como é{' '}
+            <span className="text-emerald-400">Simples e Rápido!</span>
+          </h2>
+          <p className="text-center text-slate-400 text-lg mb-12 max-w-2xl mx-auto">
+            Em menos de 1 minuto você entende tudo. Veja o passo a passo completo de como criar seu encarte profissional diretamente do celular.
+          </p>
+
+          {/* Video embed — YouTube Shorts */}
+          <div className="flex justify-center mb-12">
+            <div className="relative w-full max-w-[340px] rounded-3xl overflow-hidden border-4 border-emerald-500/40 shadow-[0_0_60px_rgba(16,185,129,0.3)]">
+              <div className="aspect-[9/16]">
+                <iframe
+                  src="https://www.youtube.com/embed/crvz0RdUSfw?rel=0&modestbranding=1&playsinline=1"
+                  title="Passo a Passo EncartesPro"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Call-to-action cards below video */}
+          <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-12">
+            <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 text-center hover:border-emerald-500/40 transition-colors duration-300">
+              <div className="text-3xl mb-3">⚡</div>
+              <h3 className="font-bold text-lg mb-2">2 Minutos</h3>
+              <p className="text-slate-400 text-sm">Do zero ao encarte pronto, em tempo recorde.</p>
+            </div>
+            <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 text-center hover:border-emerald-500/40 transition-colors duration-300">
+              <div className="text-3xl mb-3">📱</div>
+              <h3 className="font-bold text-lg mb-2">100% no Celular</h3>
+              <p className="text-slate-400 text-sm">Sem computador, sem complicação, sem sair do lugar.</p>
+            </div>
+            <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 text-center hover:border-emerald-500/40 transition-colors duration-300">
+              <div className="text-3xl mb-3">🎯</div>
+              <h3 className="font-bold text-lg mb-2">Qualquer Comércio</h3>
+              <p className="text-slate-400 text-sm">Mercado, farmácia, açougue, pet shop e muito mais.</p>
+            </div>
+          </div>
+
+          {/* CTA button */}
+          <div className="text-center">
+            <a
+              href="https://pay.kiwify.com.br/yqA1f4t"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-lg px-10 py-4 rounded-full transition-all transform hover:scale-105 inline-flex items-center gap-2 shadow-lg shadow-emerald-500/30"
+            >
+              QUERO COMEÇAR AGORA
+              <ChevronRight className="w-5 h-5" />
+            </a>
+            <p className="text-slate-500 text-sm mt-4">Pagamento único • Sem mensalidade • Acesso vitalício</p>
+          </div>
+        </div>
+      </section>
+
       {/* Pricing Section */}
       <section className="py-24 bg-slate-950 relative overflow-hidden">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-emerald-500/10 blur-[120px] rounded-full pointer-events-none" />
